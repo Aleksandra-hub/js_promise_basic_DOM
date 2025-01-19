@@ -29,7 +29,7 @@ promise2.then(
   (error) => {
     const div = document.createElement('div');
 
-    div.innerText = error;
+    div.innerText = error.message;
 
     div.setAttribute('class', 'message error-message');
     document.body.appendChild(div);
